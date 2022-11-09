@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/CourseWork2/app/src/main/res/drawable/camera_bg.xml" value="0.2105" />
+        <entry key="..\:/CourseWork2/app/src/main/res/drawable/ic_outline_camera_alt_24.xml" value="0.2115" />
         <entry key="..\:/CourseWork2/app/src/main/res/drawable/round_btn.xml" value="0.2275" />
         <entry key="..\:/CourseWork2/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/CourseWork2/app/src/main/res/layout/fragment_image_gallery.xml" value="0.25" />
+        <entry key="..\:/CourseWork2/app/src/main/res/layout/fragment_mainfragment.xml" value="0.25" />
+        <entry key="..\:/CourseWork2/app/src/main/res/layout/image_row.xml" value="0.22" />
+        <entry key="..\:/CourseWork2/app/src/main/res/xml/file_paths.xml" value="0.18704710144927536" />
       </map>
     </option>
   </component>

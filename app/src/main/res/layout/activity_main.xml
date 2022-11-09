@@ -8,113 +8,11 @@
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/register_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="15dp"
-        android:text="Daily Upload"
-        android:textSize="28sp"
-        android:textStyle="bold">
-
-    </TextView>
-
-    <ImageView
-        android:id="@+id/imageView"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
-
-
-        >
-
-
-    </ImageView>
-
-    <LinearLayout
-        android:id="@+id/terms_condition"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-
-        android:orientation="horizontal"
-
-
-        >
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/imageURL"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="15dp"
-            android:orientation="vertical"
-            android:paddingTop="15dp"
-            app:helperText=""
-            app:helperTextTextColor="@android:color/holo_red_dark">
-
-
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/ed_image_url"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Image URl"
-
-
-                >
-
-            </androidx.appcompat.widget.AppCompatEditText>
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-    </LinearLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="15dp">
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_nextImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="-80dp"
-            android:background="@drawable/round_btn"
-            android:gravity="center_vertical|center_horizontal"
-
-            android:text="Previous"
-
-
-            android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btn_prevImage"
-            app:layout_constraintHorizontal_bias="0.697"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0">
-
-        </androidx.appcompat.widget.AppCompatButton>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_prevImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="80dp"
-            android:background="@drawable/round_btn"
-            android:gravity="center"
-
-            android:text="Next"
-
-
-            android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
-
-        </androidx.appcompat.widget.AppCompatButton>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
 </LinearLayout>
